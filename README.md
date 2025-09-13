@@ -160,36 +160,9 @@ service cloud.firestore {
     }
   }
 }
+
 ```
 
-## 🌐 النشر على Netlify
-
-1. **ربط المشروع بـ Git**
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin [your-repository-url]
-git push -u origin main
-```
-
-2. **إعداد Netlify**
-   - إنشاء حساب على [Netlify](https://netlify.com)
-   - ربط المستودع
-   - إعداد أوامر البناء:
-     - **Build command**: `npm run build`
-     - **Publish directory**: `dist`
-
-3. **إعداد متغيرات البيئة في Netlify**
-   - الذهاب إلى Site Settings > Environment variables
-   - إضافة جميع متغيرات Firebase
-
-4. **إعداد Redirects للـ SPA**
-إنشاء ملف `public/_redirects`:
-```
-/*    /index.html   200
-```
 
 ## 🛡️ الأمان والخصوصية
 
